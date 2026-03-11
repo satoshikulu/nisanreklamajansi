@@ -10,7 +10,7 @@ const About = () => {
   ];
 
  return (
-  <section id="about" className="py-20 bg-white">
+  <section id="about" className="py-20 bg-purple-50 border-t-4 border-b-4 border-purple-200">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -35,10 +35,10 @@ const About = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="text-center p-6 rounded-xl bg-gradient-to-br from-blue-50 to-purple-50 hover:shadow-lg transition-shadow duration-300"
+              className="text-center p-6 rounded-xl bg-white hover:shadow-lg transition-shadow duration-300"
             >
-              <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-md">
-                <stat.icon className="w-8 h-8 text-blue-600" />
+              <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4 shadow-md">
+                <stat.icon className="w-8 h-8 text-purple-600" />
               </div>
               <p className="text-3xl font-bold text-gray-900 mb-2">{stat.number}</p>
               <p className="text-gray-600 text-sm">{stat.label}</p>

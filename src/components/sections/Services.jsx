@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import { 
   Camera, 
   Video, 
@@ -101,7 +102,7 @@ const Services = () => {
   };
 
  return (
-    <section id="services" className="py-20 bg-gradient-to-br from-gray-50 via-white to-blue-50 relative overflow-hidden">
+    <section id="services" className="py-20 bg-gradient-to-br from-gray-50 via-white to-blue-50 relative overflow-hidden border-t-4 border-b-4 border-purple-200">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')] bg-cover bg-center"></div>
@@ -203,14 +204,27 @@ const Services = () => {
                   </ul>
 
                   {/* CTA Button */}
-                  <motion.button
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    className={`w-full bg-gradient-to-r ${group.color} text-white py-3 rounded-xl font-medium flex items-center justify-center gap-2 hover:shadow-lg transition-all duration-300`}
-                  >
-                    Detayları Gör
-                    <ArrowRight className="w-4 h-4" />
-                  </motion.button>
+                  {(group.title === 'Fotoğraf & Video' || group.title === 'Dijital & Reklam' || group.title === 'Organizasyon' || group.title === 'Eğlence & Ekip') ? (
+                    <Link to={group.title === 'Fotoğraf & Video' ? '/foto-video' : group.title === 'Dijital & Reklam' ? '/dijital-reklam' : group.title === 'Organizasyon' ? '/organizasyon' : '/eglence-ekip'}>
+                      <motion.button
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                        className={`w-full bg-gradient-to-r ${group.color} text-white py-3 rounded-xl font-medium flex items-center justify-center gap-2 hover:shadow-lg transition-all duration-300`}
+                      >
+                        Detayları Gör
+                        <ArrowRight className="w-4 h-4" />
+                      </motion.button>
+                    </Link>
+                  ) : (
+                    <motion.button
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                      className={`w-full bg-gradient-to-r ${group.color} text-white py-3 rounded-xl font-medium flex items-center justify-center gap-2 hover:shadow-lg transition-all duration-300`}
+                    >
+                      Detayları Gör
+                      <ArrowRight className="w-4 h-4" />
+                    </motion.button>
+                  )}
                 </div>
 
                 {/* Hover Gradient Overlay */}

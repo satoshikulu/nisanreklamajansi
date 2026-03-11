@@ -77,7 +77,7 @@ const Gallery = () => {
     : images.filter(img => img.category === activeCategory);
 
  return (
-    <section id="gallery" className="py-20 bg-gradient-to-br from-gray-50 to-white">
+    <section id="gallery" className="py-20 bg-gradient-to-br from-gray-50 to-white border-t-4 border-b-4 border-purple-200">
       <div className="container mx-auto px-4">
         {/* Header */}
         <motion.div

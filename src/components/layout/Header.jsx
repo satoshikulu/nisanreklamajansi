@@ -127,7 +127,7 @@ const Header = () => {
                 key={link.name}
                 href={link.href}
                 onClick={(e) => handleNavClick(e, link.href)}
-                className="text-gray-700 hover:text-blue-900 transition-colors duration-300 font-medium"
+                className="nav-link text-gray-700 font-medium"
               >
                 {link.name}
               </a>
@@ -152,7 +152,7 @@ const Header = () => {
                 key={link.name}
                 href={link.href}
                 onClick={(e) => handleNavClick(e, link.href)}
-                className="block py-2 text-gray-700 hover:text-blue-900 transition-colors duration-300 font-medium"
+                className="nav-link block py-2 text-gray-700 font-medium"
               >
                 {link.name}
               </a>

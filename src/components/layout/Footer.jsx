@@ -10,8 +10,8 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <h3 className="text-2xl md:text-3xl font-bold mb-4" style={{ fontFamily: 'Tangerine, cursive', fontSize: '2.8rem' }}>Kulu Nisan Reklam Ajansı</h3>
-            <p className="text-purple-700 text-base">
-              Profesyonel reklam, organizasyon ve prodüksiyon hizmetleri.
+            <p className="text-purple-700 text-base font-bold typewriter">
+              Profesyonel reklam ve organizasyon hizmetleri.
             </p>
           </div>
 
@@ -19,6 +19,7 @@ const Footer = () => {
           <div>
             <h3 className="text-2xl md:text-3xl font-bold mb-4" style={{ fontFamily: 'Tangerine, cursive', fontSize: '2.8rem' }}>İletişim</h3>
             <div className="space-y-2">
+              <div className="text-purple-900 font-bold">Selma Tasan</div>
               <a 
                 href="tel:05331293126" 
                 className="flex items-center space-x-2 text-purple-700 hover:text-purple-900 transition-colors"
@@ -39,7 +40,7 @@ const Footer = () => {
           {/* Copyright */}
           <div className="text-center md:text-right">
             <p className="text-purple-700 text-base">
-              <span className="text-purple-900">© {currentYear} Kulu Nisan Reklam Ajansı.<br />
+              <span className="text-purple-900">© 2024 Kulu Nisan Reklam Ajansı.<br />
               Tüm hakları saklıdır.</span>
             </p>
           </div>
