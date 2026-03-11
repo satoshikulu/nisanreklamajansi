@@ -12,7 +12,7 @@ const Hero = () => {
  return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      className="relative min-h-[60vh] flex items-center justify-center overflow-hidden"
     >
       {/* Animated Background */}
       <div className="absolute inset-0">
@@ -56,7 +56,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 py-20 text-center relative z-10">
+      <div className="container mx-auto px-4 py-8 text-center relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -76,7 +76,7 @@ const Hero = () => {
 
           {/* Main Heading */}
           <motion.h1 
-            className="text-6xl md:text-8xl font-black text-white mb-6 leading-tight"
+            className="text-4xl md:text-6xl font-black text-white mb-6 leading-tight"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.7 }}
@@ -86,21 +86,24 @@ const Hero = () => {
               Kulu Nisan
             </span>
             <br />
-            <span className="text-4xl md:text-6xl font-bold text-white/90">
+            <span className="text-2xl md:text-4xl font-bold text-white/90">
               Reklam Ajansı
             </span>
           </motion.h1>
 
           {/* Subtitle */}
           <motion.p 
-            className="text-2xl md:text-4xl text-gray-200 mb-12 max-w-4xl mx-auto leading-relaxed turkish-text-tangerine"
+            className="text-gray-200 mb-12 max-w-4xl mx-auto leading-relaxed turkish-text-tangerine"
+            style={{ 
+              fontFamily: "'Tangerine', 'Dancing Script', cursive",
+              fontSize: 'calc(1.5rem * 2)' /* text-2xl (1.5rem) 2 kat büyütüldü */
+            }}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.9 }}
-            style={{ fontFamily: "'Tangerine', 'Dancing Script', cursive" }}
           >
             Hayalinizdeki etkinliği profesyonel dokunuşlarla hayata geçiriyoruz. 
-            <span className="block text-3xl md:text-5xl font-bold text-yellow-300 mt-2">
+            <span className="block text-3xl md:text-5xl font-bold text-yellow-300 mt-2" style={{ fontSize: 'calc(3rem * 1.1)' /* text-5xl (3rem) %10 arttırıldı */ }}>
               Düğün • Nişan • Organizasyon • Prodüksiyon
             </span>
           </motion.p>
