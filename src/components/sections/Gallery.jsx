@@ -87,7 +87,7 @@ const Gallery = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-6xl font-black bg-gradient-to-r from-gray-900 via-blue-800 to-purple-800 bg-clip-text text-transparent mb-4" style={{ fontFamily: 'Tangerine, cursive' }}>
+          <h2 className="text-4xl md:text-6xl font-black bg-gradient-to-r from-gray-900 via-blue-800 to-purple-800 bg-clip-text text-transparent mb-4" style={{ fontFamily: "'Jura', sans-serif" }}>
             Son Çalışmalarımız
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -158,7 +158,7 @@ const Gallery = () => {
               {/* Content */}
               <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
                 <div className="bg-white/10 backdrop-blur-md rounded-xl p-4">
-                  <h3 className="text-white text-xl font-bold mb-2" style={{ fontFamily: 'Tangerine, cursive', fontSize: '1.5rem' }}>{image.title}</h3>
+                  <h3 className="text-white text-xl font-bold mb-2" style={{ fontFamily: "'Jura', sans-serif", fontSize: '1.5rem' }}>{image.title}</h3>
                   <p className="text-gray-200 text-sm mb-3">{image.description}</p>
                   <button className="bg-white/20 backdrop-blur-sm text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-white/30 transition-colors">
                     Detayları Gör

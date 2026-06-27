@@ -19,7 +19,7 @@ const About = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4" style={{ fontFamily: 'Tangerine, cursive' }}>
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4" style={{ fontFamily: "'Jura', sans-serif" }}>
             Hakkımızda
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -55,7 +55,7 @@ const About = () => {
             transition={{ duration: 0.6 }}
             className="bg-gradient-to-br from-blue-600 to-blue-700 text-white p-8 rounded-xl shadow-lg"
           >
-              <h3 className="text-2xl font-bold mb-4" style={{ fontFamily: 'Tangerine, cursive', fontSize: '1.75rem' }}>Misyonumuz</h3>
+              <h3 className="text-2xl font-bold mb-4" style={{ fontFamily: "'Jura', sans-serif", fontSize: '1.75rem' }}>Misyonumuz</h3>
             <p className="text-blue-100 leading-relaxed">
               Müşterilerimize en kaliteli reklam, organizasyon ve prodüksiyon hizmetlerini sunarak, 
               onların başarılarına katkıda bulunmak ve sektörde fark yaratmak.
@@ -69,7 +69,7 @@ const About = () => {
             transition={{ duration: 0.6 }}
             className="bg-gradient-to-br from-purple-600 to-purple-700 text-white p-8 rounded-xl shadow-lg"
           >
-            <h3 className="text-2xl font-bold mb-4" style={{ fontFamily: 'Tangerine, cursive', fontSize: '1.75rem' }}>Vizyonumuz</h3>
+            <h3 className="text-2xl font-bold mb-4" style={{ fontFamily: "'Jura', sans-serif", fontSize: '1.75rem' }}>Vizyonumuz</h3>
             <p className="text-purple-100 leading-relaxed">
               Bölgenin en güvenilir, en yenilikçi ve en tercih edilen reklam ajansı olmak, 
               sürekli gelişim ve müşteri memnuniyeti odaklı çalışmak.

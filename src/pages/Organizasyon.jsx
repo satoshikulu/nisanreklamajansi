@@ -117,7 +117,7 @@ const Organizasyon = () => {
               Hizmetlerimize Dön
             </Link>
             
-            <h1 className="text-5xl md:text-7xl font-black mb-6" style={{ fontFamily: 'Tangerine, cursive' }}>
+            <h1 className="text-5xl md:text-7xl font-black mb-6" style={{ fontFamily: "'Jura', sans-serif" }}>
               <span className="bg-gradient-to-r from-white via-pink-200 to-rose-200 bg-clip-text text-transparent">
                 Organizasyon
               </span>
@@ -139,7 +139,7 @@ const Organizasyon = () => {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4" style={{ fontFamily: 'Tangerine, cursive' }}>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4" style={{ fontFamily: "'Jura', sans-serif" }}>
               Organizasyon Hizmetlerimiz
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -173,7 +173,7 @@ const Organizasyon = () => {
                 </div>
                 
                 <div className="p-6">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-3" style={{ fontFamily: 'Tangerine, cursive' }}>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-3" style={{ fontFamily: "'Jura', sans-serif" }}>
                     {service.title}
                   </h3>
                   <p className="text-gray-600 leading-relaxed">
@@ -196,7 +196,7 @@ const Organizasyon = () => {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4" style={{ fontFamily: 'Tangerine, cursive' }}>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4" style={{ fontFamily: "'Jura', sans-serif" }}>
               Organizasyonlarımız
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -279,7 +279,7 @@ const Organizasyon = () => {
             transition={{ duration: 0.6 }}
             className="bg-gradient-to-r from-pink-600 to-rose-600 rounded-3xl p-12 text-center text-white"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ fontFamily: 'Tangerine, cursive' }}>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ fontFamily: "'Jura', sans-serif" }}>
               Özel Gününüzü Unutulmaz Kılın
             </h2>
             <p className="text-xl mb-8 text-white/90">

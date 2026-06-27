@@ -93,7 +93,7 @@ const EglenceEkip = () => {
               Hizmetlerimize Dön
             </Link>
             
-            <h1 className="text-5xl md:text-7xl font-black mb-6" style={{ fontFamily: 'Tangerine, cursive' }}>
+            <h1 className="text-5xl md:text-7xl font-black mb-6" style={{ fontFamily: "'Jura', sans-serif" }}>
               <span className="bg-gradient-to-r from-white via-orange-200 to-red-200 bg-clip-text text-transparent">
                 Eğlence & Ekip
               </span>
@@ -115,7 +115,7 @@ const EglenceEkip = () => {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4" style={{ fontFamily: 'Tangerine, cursive' }}>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4" style={{ fontFamily: "'Jura', sans-serif" }}>
               Eğlence Hizmetlerimiz
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -149,7 +149,7 @@ const EglenceEkip = () => {
                 </div>
                 
                 <div className="p-6">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-3" style={{ fontFamily: 'Tangerine, cursive' }}>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-3" style={{ fontFamily: "'Jura', sans-serif" }}>
                     {service.title}
                   </h3>
                   <p className="text-gray-600 leading-relaxed">
@@ -172,7 +172,7 @@ const EglenceEkip = () => {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4" style={{ fontFamily: 'Tangerine, cursive' }}>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4" style={{ fontFamily: "'Jura', sans-serif" }}>
               Eğlence Gösterilerimiz
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -295,7 +295,7 @@ const EglenceEkip = () => {
             transition={{ duration: 0.6 }}
             className="bg-gradient-to-r from-orange-600 to-red-600 rounded-3xl p-12 text-center text-white"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ fontFamily: 'Tangerine, cursive' }}>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ fontFamily: "'Jura', sans-serif" }}>
               Etkinliğinize Eğlence Katın
             </h2>
             <p className="text-xl mb-8 text-white/90">

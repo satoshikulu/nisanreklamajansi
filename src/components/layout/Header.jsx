@@ -29,7 +29,7 @@ const Header = () => {
           {/* Logo */}
           <motion.div 
             className="text-2xl font-bold text-blue-900 relative"
-            style={{ fontFamily: 'Tangerine, cursive', fontSize: '3rem' }}
+            style={{ fontFamily: "'Jura', sans-serif", fontSize: '3rem' }}
             whileHover={{ scale: 1.05 }}
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}

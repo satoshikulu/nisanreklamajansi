@@ -180,7 +180,7 @@ const Services = () => {
                   </motion.div>
                   
                   {/* Title */}
-                  <h3 className="text-2xl font-bold text-gray-900 text-center mb-6" style={{ fontFamily: 'Tangerine, cursive', fontSize: '2rem' }}>
+                  <h3 className="text-2xl font-bold text-gray-900 text-center mb-6" style={{ fontFamily: "'Jura', sans-serif", fontSize: '2rem' }}>
                     {group.title}
                   </h3>
                   
@@ -245,7 +245,7 @@ const Services = () => {
           <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl p-12 text-white relative overflow-hidden">
             <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center opacity-10"></div>
             <div className="relative z-10 text-center">
-              <h3 className="text-3xl md:text-4xl font-bold mb-4" style={{ fontFamily: 'Tangerine, cursive' }}>
+              <h3 className="text-3xl md:text-4xl font-bold mb-4" style={{ fontFamily: "'Jura', sans-serif" }}>
                 Özel hizmet mi arıyorsunuz?
               </h3>
               <p className="text-xl mb-8 text-white/90">

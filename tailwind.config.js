@@ -12,7 +12,7 @@ export default {
         accent: '#3b82f6', // Bright blue
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
+        sans: ['Jura', 'system-ui', 'sans-serif'],
       },
     },
   },

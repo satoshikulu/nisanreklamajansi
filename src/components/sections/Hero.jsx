@@ -80,7 +80,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.7 }}
-            style={{ fontFamily: 'Tangerine, cursive' }}
+            style={{ fontFamily: "'Jura', sans-serif" }}
           >
             <span className="bg-gradient-to-r from-white via-blue-200 to-purple-200 bg-clip-text text-transparent">
               Kulu Nisan
@@ -95,7 +95,7 @@ const Hero = () => {
           <motion.p 
             className="text-gray-200 mb-12 max-w-4xl mx-auto leading-relaxed turkish-text-tangerine"
             style={{ 
-              fontFamily: "'Tangerine', 'Dancing Script', cursive",
+              fontFamily: "'Jura', sans-serif",
               fontSize: 'calc(1.5rem * 2)' /* text-2xl (1.5rem) 2 kat büyütüldü */
             }}
             initial={{ opacity: 0, y: 20 }}

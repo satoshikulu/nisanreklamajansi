@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-2xl md:text-3xl font-bold mb-4" style={{ fontFamily: 'Tangerine, cursive', fontSize: '2.8rem' }}>Kulu Nisan Reklam Ajansı</h3>
+            <h3 className="text-2xl md:text-3xl font-bold mb-4" style={{ fontFamily: "'Jura', sans-serif", fontSize: '2.8rem' }}>Kulu Nisan Reklam Ajansı</h3>
             <p className="text-purple-700 text-base font-bold typewriter">
               Profesyonel reklam ve organizasyon hizmetleri.
             </p>
@@ -17,7 +17,7 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-2xl md:text-3xl font-bold mb-4" style={{ fontFamily: 'Tangerine, cursive', fontSize: '2.8rem' }}>İletişim</h3>
+            <h3 className="text-2xl md:text-3xl font-bold mb-4" style={{ fontFamily: "'Jura', sans-serif", fontSize: '2.8rem' }}>İletişim</h3>
             <div className="space-y-2">
               <div className="text-purple-900 font-bold">Selma Tasan</div>
               <a 

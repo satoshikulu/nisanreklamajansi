@@ -33,7 +33,7 @@ const Contact = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4" style={{ fontFamily: 'Tangerine, cursive' }}>
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4" style={{ fontFamily: "'Jura', sans-serif" }}>
             Bize Ulaşın
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -51,7 +51,7 @@ const Contact = () => {
             className="space-y-8"
           >
             <div className="bg-white p-6 rounded-xl shadow-lg">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6" style={{ fontFamily: 'Tangerine, cursive', fontSize: '1.75rem' }}>İletişim Bilgileri</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-6" style={{ fontFamily: "'Jura', sans-serif", fontSize: '1.75rem' }}>İletişim Bilgileri</h3>
               
               <a 
                 href="tel:05331293126"
@@ -112,7 +112,7 @@ const Contact = () => {
             transition={{ duration: 0.6 }}
           >
             <form onSubmit={handleSubmit} className="bg-white p-8 rounded-xl shadow-lg">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6" style={{ fontFamily: 'Tangerine, cursive', fontSize: '1.75rem' }}>Mesaj Gönderin</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-6" style={{ fontFamily: "'Jura', sans-serif", fontSize: '1.75rem' }}>Mesaj Gönderin</h3>
               
               <div className="space-y-4">
                 <div>
