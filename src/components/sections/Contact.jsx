@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Phone, Mail, MapPin, Send } from 'lucide-react';
+import { Phone, Mail, MapPin, Send, MessageCircle } from 'lucide-react';
+
+const WHATSAPP_NUMBER = '905331293126';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -11,8 +13,9 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-   console.log('Form gönderildi:', formData);
-    alert('Mesajınız bize ulaştı. En kısa sürede size dönüş yapacağız!');
+    const text = `Merhaba! Ben ${formData.name}.\n\nE-posta: ${formData.email}\n\nMesaj: ${formData.message}`;
+    const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
+    window.open(url, '_blank');
     setFormData({ name: '', email: '', message: '' });
   };
 
@@ -165,11 +168,21 @@ const Contact = () => {
 
                 <button
                   type="submit"
-                  className="w-full bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-300 flex items-center justify-center space-x-2"
+                  className="w-full bg-green-500 text-white py-3 px-6 rounded-lg font-semibold hover:bg-green-600 transition-colors duration-300 flex items-center justify-center space-x-2"
                 >
-                  <Send size={20} />
-                  <span>Mesajı Gönder</span>
+                  <MessageCircle size={20} />
+                  <span>WhatsApp ile Gönder</span>
                 </button>
+
+                <a
+                  href={`https://wa.me/${WHATSAPP_NUMBER}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full bg-white border-2 border-green-500 text-green-600 py-3 px-6 rounded-lg font-semibold hover:bg-green-50 transition-colors duration-300 flex items-center justify-center space-x-2"
+                >
+                  <Phone size={20} />
+                  <span>WhatsApp ile Ara — 0 533 129 31 26</span>
+                </a>
               </div>
             </form>
           </motion.div>
