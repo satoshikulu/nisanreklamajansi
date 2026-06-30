@@ -1,7 +1,26 @@
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown, ArrowRight } from 'lucide-react';
+import { useState, useEffect } from 'react';
+
+const bgImages = [
+  'https://plus.unsplash.com/premium_photo-1681841703443-53de247ce32b?q=80&w=1920&auto=format&fit=crop',
+  'https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1920&auto=format&fit=crop',
+  'https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?q=80&w=1920&auto=format&fit=crop',
+  'https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?q=80&w=1920&auto=format&fit=crop',
+];
+
+// Her görsel için zoom yönü: zoomIn = büyür, zoomOut = küçülür
+const zoomDirections = ['zoomIn', 'zoomOut', 'zoomIn', 'zoomOut'];
 
 const Hero = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % bgImages.length);
+    }, 6000);
+    return () => clearInterval(timer);
+  }, []);
   const scrollToServices = () => {
     document.querySelector('#services')?.scrollIntoView({ behavior: 'smooth' });
   };
@@ -9,10 +28,44 @@ const Hero = () => {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-slate-900">
 
-      {/* Background Image */}
-      <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-[url('https://plus.unsplash.com/premium_photo-1681841703443-53de247ce32b?q=80&w=1920&auto=format&fit=crop')] bg-cover bg-center opacity-20" />
+      {/* Background Slideshow with Ken Burns */}
+      <div className="absolute inset-0 overflow-hidden">
+        <AnimatePresence>
+          <motion.div
+            key={currentIndex}
+            className="absolute inset-0"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1.5, ease: 'easeInOut' }}
+          >
+            <motion.div
+              className="absolute inset-0 bg-cover bg-center"
+              style={{ backgroundImage: `url(${bgImages[currentIndex]})` }}
+              initial={{
+                scale: zoomDirections[currentIndex] === 'zoomIn' ? 1 : 1.15,
+              }}
+              animate={{
+                scale: zoomDirections[currentIndex] === 'zoomIn' ? 1.15 : 1,
+              }}
+              transition={{ duration: 6.5, ease: 'easeInOut' }}
+            />
+          </motion.div>
+        </AnimatePresence>
         <div className="absolute inset-0 bg-gradient-to-b from-slate-900/60 via-slate-900/40 to-slate-900/90" />
+      </div>
+
+      {/* Slide indicators */}
+      <div className="absolute bottom-24 left-1/2 -translate-x-1/2 flex gap-2 z-20">
+        {bgImages.map((_, i) => (
+          <button
+            key={i}
+            onClick={() => setCurrentIndex(i)}
+            className={`h-1 rounded-full transition-all duration-500 ${
+              i === currentIndex ? 'w-8 bg-amber-400' : 'w-2 bg-white/30'
+            }`}
+          />
+        ))}
       </div>
 
       {/* Subtle animated orbs */}
